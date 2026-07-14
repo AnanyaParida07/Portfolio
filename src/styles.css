@@ -1,45 +1,43 @@
 :root {
-  --primary-color: #2563eb;
-  --primary-light: #3b82f6;
+  --primary-color: #6366f1;
+  --primary-light: #8b5cf6;
 
-  --text-color: #1e293b;
-  --text-light: #64748b;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
 
   --bg-color: #f8fafc;
 
-  --section-alt: #ffffff;
+  --section-alt: #eef2ff;
 
-  --card-bg: rgba(255, 255, 255, 0.75);
+  --card-bg: rgba(255, 255, 255, 0.8);
 
-  --nav-bg: rgba(255, 255, 255, 0.65);
+  --nav-bg: rgba(255, 255, 255, 0.7);
 
   --secondary-bg: #ffffff;
 
-  --shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  --shadow: 0 15px 35px rgba(99, 102, 241, 0.12);
 
-  --border: rgba(255, 255, 255, 0.35);
+  --border: rgba(255, 255, 255, 0.4);
 }
 
 html.dark-theme {
-  --primary-color: #60a5fa;
+  --primary-color: #818cf8;
+  --primary-light: #a78bfa;
 
-  --primary-light: #3b82f6;
-
-  --text-color: #f1f5f9;
-
+  --text-color: #f8fafc;
   --text-light: #94a3b8;
 
-  --bg-color: #020617;
+  --bg-color: #09090b;
 
-  --section-alt: #0f172a;
+  --section-alt: #18181b;
 
-  --card-bg: rgba(30, 41, 59, 0.7);
+  --card-bg: rgba(39, 39, 42, 0.75);
 
-  --nav-bg: rgba(15, 23, 42, 0.75);
+  --nav-bg: rgba(24, 24, 27, 0.75);
 
-  --secondary-bg: #1e293b;
+  --secondary-bg: #27272a;
 
-  --shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  --shadow: 0 20px 40px rgba(99, 101, 241, 0.139);
 
   --border: rgba(255, 255, 255, 0.05);
 }

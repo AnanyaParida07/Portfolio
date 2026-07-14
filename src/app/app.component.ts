@@ -7,10 +7,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  isDarkMode = false;
+  isDarkMode = true;
+  isMenuOpen = false;
   showScrollTop = false;
 
   ngOnInit() {
+    document.documentElement.classList.add('dark-theme');
     this.onScroll();
   }
 
@@ -19,11 +21,19 @@ export class AppComponent implements OnInit {
     document.documentElement.classList.toggle('dark-theme');
   }
 
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
+  }
+
   @HostListener('window:scroll', [])
   onScroll() {
     this.showScrollTop = window.scrollY > 300;
 
-    const sections = ['about', 'skills', 'projects', 'contact'];
+    const sections = ['about', 'skills', 'projects', 'experience', 'contact'];
     let currentSection = '';
     sections.forEach(section => {
       const element = document.getElementById(section);
