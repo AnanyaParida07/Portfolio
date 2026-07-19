@@ -1,16 +1,30 @@
 <nav class="navbar">
   <div class="logo">Ananya <span>Parida</span></div>
 
-  <button class="nav-menu-toggle" type="button" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen" aria-label="Toggle navigation menu">
+  <button
+    class="nav-menu-toggle"
+    type="button"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="isMenuOpen"
+    aria-label="Toggle navigation menu"
+  >
     <span></span><span></span><span></span>
   </button>
 
   <ul class="nav-links" [class.is-open]="isMenuOpen">
     <li><a id="about-link" href="#about" (click)="closeMenu()">About</a></li>
     <li><a id="skills-link" href="#skills" (click)="closeMenu()">Skills</a></li>
-    <li><a id="projects-link" href="#projects" (click)="closeMenu()">Projects</a></li>
-    <li><a id="experience-link" href="#experience" (click)="closeMenu()">Experience</a></li>
-    <li><a id="contact-link" href="#contact" (click)="closeMenu()">Contact</a></li>
+    <li>
+      <a id="projects-link" href="#projects" (click)="closeMenu()">Projects</a>
+    </li>
+    <li>
+      <a id="experience-link" href="#experience" (click)="closeMenu()"
+        >Experience</a
+      >
+    </li>
+    <li>
+      <a id="contact-link" href="#contact" (click)="closeMenu()">Contact</a>
+    </li>
 
     <li>
       <button class="theme-toggle" (click)="toggleTheme()">
@@ -75,13 +89,16 @@
       <h2 class="role">Java Full-stack Developer</h2>
 
       <p class="hero-description">
-        I build thoughtful enterprise applications with Java, Spring Boot and
-        Angular—where solid architecture meets a smooth user experience.
+        Whether it's a new feature, a tricky bug, or an idea waiting to become
+        reality, I enjoy figuring things out and building solutions that people
+        actually use.
       </p>
 
       <div class="currently-exploring">
-        <span>Currently exploring</span>
-        <div><b>Kafka</b><b>System Design</b><b>Cloud Deployment</b></div>
+        <!-- <span>Currently exploring</span> -->
+        <div>
+          <b>Building Things</b><b>Solving Problems</b><b>Always Learning</b>
+        </div>
       </div>
 
       <div class="hero-buttons">
@@ -123,7 +140,7 @@
           <span>Contact Me</span>
         </a>
       </div>
-      <div class="hero-stats">
+      <!-- <div class="hero-stats">
         <div class="stat-card">
           <h3>2+</h3>
           <p>Years Experience</p>
@@ -138,7 +155,7 @@
           <h3>20+</h3>
           <p>REST APIs</p>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="hero-right">
@@ -150,16 +167,47 @@
         </div>
 
         <div class="code-content" aria-label="A playful Java introduction">
-          <p><span class="line-no">01</span><span class="code-keyword">&#64;Developer</span></p>
-          <p><span class="line-no">02</span><span class="code-keyword">public class </span> <span class="code-class">Ananya</span> &#123;</p>
+          <p>
+            <span class="line-no">01</span
+            ><span class="code-keyword">&#64;Developer</span>
+          </p>
+          <p>
+            <span class="line-no">02</span
+            ><span class="code-keyword">public class </span>
+            <span class="code-class">Ananya</span> &#123;
+          </p>
           <p><span class="line-no">03</span></p>
-          <p><span class="line-no">04</span>&nbsp;&nbsp;<span class="code-keyword">private final</span> String fuel = <span class="code-string">&quot;chai + clean code&quot;</span>;</p>
+          <p>
+            <span class="line-no">04</span>&nbsp;&nbsp;<span
+              class="code-keyword"
+              >private final</span
+            >
+            String fuel =
+            <span class="code-string">&quot;chai + clean code&quot;</span>;
+          </p>
           <p><span class="line-no">05</span></p>
-          <p><span class="line-no">06</span>&nbsp;&nbsp;<span class="code-keyword">public</span> String superpower() &#123;</p>
-          <p><span class="line-no">07</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">&quot;making complex things feel simple&quot;</span>;</p>
+          <p>
+            <span class="line-no">06</span>&nbsp;&nbsp;<span
+              class="code-keyword"
+              >public</span
+            >
+            String superpower() &#123;
+          </p>
+          <p>
+            <span class="line-no">07</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+              class="code-keyword"
+              >return</span
+            >
+            <span class="code-string"
+              >&quot;making complex things feel simple&quot;</span
+            >;
+          </p>
           <p><span class="line-no">08</span>&nbsp;&nbsp;&#125;</p>
           <p><span class="line-no">09</span></p>
-          <p><span class="line-no">10</span>&nbsp;&nbsp;void debug() &#123; coffee++; patience++; &#125;</p>
+          <p>
+            <span class="line-no">10</span>&nbsp;&nbsp;void debug() &#123;
+            coffee++; patience++; &#125;
+          </p>
           <p><span class="line-no">11</span>&#125;</p>
         </div>
 
@@ -167,7 +215,9 @@
         <div class="stack-chip chip-spring">Spring Boot</div>
         <div class="architecture-note">
           <span class="note-icon">✦</span>
-          <div><strong>Architecture first</strong><small>Scalable by design</small></div>
+          <div>
+            <strong>Architecture first</strong><small>Scalable by design</small>
+          </div>
         </div>
       </div>
     </div>
@@ -181,21 +231,24 @@
     <div class="about-grid">
       <div class="about-text">
         <p>
-          I'm a Software Engineer with <strong>2+ years of experience</strong>
-          building enterprise banking and payroll applications using Java,
-          Spring Boot, Microservices, REST APIs, Oracle, PostgreSQL and Angular.
+          I'm a Software Engineer with over 2 years of experience building
+          applications that solve real business problems. I enjoy transforming
+          ideas into reliable, intuitive software that people can depend on
+          every day.
         </p>
 
         <p>
-          My primary expertise is backend development, where I enjoy designing
-          scalable APIs, optimizing database queries and building secure,
-          maintainable applications.
+          What I enjoy most about development is the process
+          itself—understanding a problem, breaking it into smaller pieces, and
+          finding clean, practical solutions. I'm always looking for ways to
+          write better code and build better products.
         </p>
 
         <p>
-          I also have experience working with Angular to build responsive
-          front-end interfaces and integrating them with Spring Boot
-          microservices.
+          Outside of work, you'll usually find me exploring new technologies,
+          working on personal projects, or sharpening my problem-solving skills.
+          I believe there's always something new to learn, and that's what makes
+          software development so exciting.
         </p>
       </div>
 
@@ -221,7 +274,7 @@
 
           <span>B.Tech</span>
 
-          <p>GITA Autonomous College (BPUT)</p>
+          <p>GITA Autonomous College</p>
         </div>
 
         <div class="info-card">
@@ -245,37 +298,44 @@
         <div class="skill-map-intro">
           <span class="eyebrow">MY DEVELOPMENT TOOLKIT</span>
           <h3>From clean backend architecture to polished user experiences.</h3>
-          <p>Technologies I use to turn ideas into reliable, scalable applications.</p>
+          <p>
+            Technologies I use to turn ideas into reliable, scalable
+            applications.
+          </p>
         </div>
 
         <div class="skill-tracks">
           <div class="skill-track">
             <div class="track-label"><span>01</span> Backend</div>
             <div class="skill-tags">
-              <span>Java</span><span>Spring Boot</span><span>Spring Security</span>
-              <span>Microservices</span><span>REST APIs</span>
+              <span>Java</span><span>Spring Boot</span
+              ><span>Spring Security</span> <span>Microservices</span
+              ><span>REST APIs</span>
             </div>
           </div>
 
           <div class="skill-track">
             <div class="track-label"><span>02</span> Frontend</div>
             <div class="skill-tags">
-              <span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span>
+              <span>Angular</span><span>TypeScript</span><span>HTML</span
+              ><span>CSS</span>
             </div>
           </div>
 
           <div class="skill-track">
             <div class="track-label"><span>03</span> Data</div>
             <div class="skill-tags">
-              <span>SQL</span><span>Oracle</span><span>PostgreSQL</span><span>MySQL</span>
+              <span>SQL</span><span>Oracle</span><span>PostgreSQL</span
+              ><span>MySQL</span>
             </div>
           </div>
 
           <div class="skill-track">
             <div class="track-label"><span>04</span> Workflow</div>
             <div class="skill-tags">
-              <span>Git</span><span>Docker</span><span>Maven</span><span>Postman</span>
-              <span>JWT</span><span>OAuth2</span><span>Agile</span><span>SOLID</span>
+              <span>Git</span><span>Docker</span><span>Maven</span
+              ><span>Postman</span> <span>JWT</span><span>OAuth2</span
+              ><span>Agile</span><span>SOLID</span>
             </div>
           </div>
         </div>
@@ -300,7 +360,10 @@
           <div class="project-header">
             <h3>API Monitoring Dashboard</h3>
 
-            <span class="status live"> ● Personal </span>
+            <span class="status live">
+              <span class="dot"></span>
+              Personal
+            </span>
           </div>
 
           <p>
@@ -309,14 +372,17 @@
           </p>
 
           <div class="project-tags">
-            <span>Java 21</span>
+            <span>Java</span>
             <span>Spring Boot</span>
             <span>Angular</span>
             <span>PostgreSQL</span>
             <span>Docker</span>
           </div>
 
-          <p class="project-impact"><strong>Impact</strong> Tracks availability and response time with scheduled health checks.</p>
+          <p class="project-impact">
+            <strong>Impact</strong> Tracks availability and response time with
+            scheduled health checks.
+          </p>
 
           <ul class="project-features">
             <li>✔ Scheduled API monitoring</li>
@@ -326,14 +392,14 @@
 
           <div class="project-buttons">
             <a
-              href="YOUR_GITHUB_LINK"
+              href="https://github.com/AnanyaParida07/api-monitor-dashboard"
               target="_blank"
               class="project-btn secondary"
             >
               GitHub
             </a>
 
-            <a href="#" class="project-btn"> Live Demo </a>
+            <!-- <a href="#" class="project-btn"> Live Demo </a> -->
           </div>
         </div>
       </div>
@@ -342,43 +408,48 @@
 
       <div class="project-card">
         <div class="project-image">
-          <img src="employee-project.png" />
+          <img src="payzohr.png" alt="Payzo HR" />
         </div>
 
         <div class="project-content">
           <div class="project-header">
-            <h3>Employee Management</h3>
+            <h3>Payzo HR</h3>
 
-            <span class="status private"> ● Enterprise </span>
+            <span class="status private">
+              <span class="dot"></span>
+              Enterprise
+            </span>
           </div>
 
           <p>
-            Enterprise HR platform with authentication, employee management and
-            approval workflow.
+            Enterprise Payroll & HR Management platform designed to automate
+            payroll, employee management, leave workflows, and organizational
+            operations for modern businesses.
           </p>
 
           <div class="project-tags">
+            <span>Java</span>
             <span>Spring Boot</span>
-
             <span>Angular</span>
-
-            <span>MySQL</span>
-
-            <span>JWT</span>
+            <span>PostgreSQL</span>
+            <span>Elasticsearch</span>
+            <span>Docker</span>
           </div>
 
-          <p class="project-impact"><strong>Impact</strong> Streamlines employee and approval workflows in one secure platform.</p>
+          <p class="project-impact">
+            <strong>Impact</strong>Streamlined payroll and HR operations through
+            a centralized enterprise platform.
+          </p>
 
           <ul class="project-features">
-            <li>✔ JWT Authentication</li>
-
-            <li>✔ CRUD Operations</li>
-
-            <li>✔ Responsive UI</li>
+            <li>✔ Payroll Automation</li>
+            <li>✔ Attendance Tracking</li>
+            <li>✔ Role-Based Access</li>
+            <li>✔ Multi-Company Support</li>
           </ul>
 
           <div class="project-buttons">
-            <a class="project-btn secondary"> Private Repository </a>
+            <a href="https://payzohr.com" class="project-btn"> Live </a>
           </div>
         </div>
       </div>
@@ -394,7 +465,10 @@
           <div class="project-header">
             <h3>Developer Portfolio</h3>
 
-            <span class="status live"> ● Live </span>
+            <span class="status live">
+              <span class="dot"></span>
+              Live
+            </span>
           </div>
 
           <p>
@@ -410,13 +484,14 @@
             <span>CSS</span>
           </div>
 
-          <p class="project-impact"><strong>Impact</strong> A fast, responsive personal site with dark mode support.</p>
+          <p class="project-impact">
+            <strong>Impact</strong> A fast, responsive personal site with dark
+            mode support.
+          </p>
 
           <ul class="project-features">
             <li>✔ Responsive</li>
-
             <li>✔ Dark Mode</li>
-
             <li>✔ Smooth Scroll</li>
           </ul>
 
@@ -447,34 +522,56 @@
             <div>
               <span class="experience-period">JULY 2024 — PRESENT</span>
               <h3>Software Engineer I</h3>
-              <p class="company-name">Interland Technology Services <span>•</span> Trivandrum, Kerala</p>
+              <p class="company-name">
+                Interland Technology Services <span>•</span> Trivandrum, Kerala
+              </p>
             </div>
             <span class="current-role">Current role</span>
           </div>
 
           <p class="experience-summary">
-            Building secure, scalable enterprise applications for banking and HR/payroll operations using Java, Spring Boot, Angular and microservices.
+            Building secure, scalable enterprise applications for banking and
+            HR/payroll operations using Java, Spring Boot, Angular and
+            microservices.
           </p>
 
           <div class="experience-work">
             <div>
               <h4>Escrow Management Systems</h4>
-              <p>Developed business-critical escrow, customer onboarding, IPO, notification and banking-integration modules for ANB, Riyad Bank and Saudi Awwal Bank.</p>
+              <p>
+                Developed business-critical escrow, customer onboarding, IPO,
+                notification and banking-integration modules for ANB, Riyad Bank
+                and Saudi Awwal Bank.
+              </p>
             </div>
             <div>
               <h4>PayZo HR & Payroll Platform</h4>
-              <p>Built REST APIs and Angular modules for employee, attendance, leave, claims and payroll workflows, including Elasticsearch-powered search.</p>
+              <p>
+                Built REST APIs and Angular modules for employee, attendance,
+                leave, claims and payroll workflows, including
+                Elasticsearch-powered search.
+              </p>
             </div>
           </div>
 
           <ul class="experience-highlights">
-            <li>Integrated REST and SOAP services, OAuth2 authentication and secure enterprise banking workflows.</li>
-            <li>Optimized Oracle SQL, resolved production issues and supported performance tuning across core modules.</li>
-            <li>Contributed to Docker-based deployments in an Agile engineering environment.</li>
+            <li>
+              Integrated REST and SOAP services, OAuth2 authentication and
+              secure enterprise banking workflows.
+            </li>
+            <li>
+              Optimized Oracle SQL, resolved production issues and supported
+              performance tuning across core modules.
+            </li>
+            <li>
+              Contributed to Docker-based deployments in an Agile engineering
+              environment.
+            </li>
           </ul>
 
           <div class="experience-tags">
-            <span>Java</span><span>Spring Boot</span><span>Microservices</span><span>Angular</span><span>Oracle</span><span>PostgreSQL</span>
+            <span>Java</span><span>Spring Boot</span><span>Microservices</span
+            ><span>Angular</span><span>Oracle</span><span>PostgreSQL</span>
           </div>
         </div>
       </article>
@@ -592,22 +689,40 @@
 
         <div class="contact-card-content">
           <div class="contact-card-top">
-            <span class="contact-badge"><i></i> Available for opportunities</span>
+            <span class="contact-badge"
+              ><i></i> Available for opportunities</span
+            >
             <span class="contact-mark">Ananya Parida</span>
           </div>
 
           <h3>Have a great idea?<br /><span>Let’s make it real.</span></h3>
 
-          <p>Whether it’s a reliable backend, a polished web experience, or a complex business problem—I’d love to hear about it.</p>
+          <p>
+            Whether it’s a reliable backend, a polished web experience, or a
+            complex business problem—I’d love to hear about it.
+          </p>
 
           <a href="mailto:ananya71001@gmail.com" class="contact-mail-btn">
             <span>Start a conversation</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 12h14m-6-6 6 6-6 6"
+              />
             </svg>
           </a>
 
-          <div class="contact-response"><span></span> Usually responds within a week</div>
+          <div class="contact-response">
+            <span></span> Usually responds within a week
+          </div>
         </div>
       </div>
     </div>
@@ -641,7 +756,12 @@
 
     <div class="footer-meta">
       <span>Designed &amp; built with Angular</span>
-      <a href="https://github.com/AnanyaParida07" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a
+        href="https://github.com/AnanyaParida07"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub ↗</a
+      >
     </div>
   </div>
   <div class="footer-bottom">
